@@ -1,0 +1,198 @@
+/* Custom round cursor */
+html, body {
+	cursor: none;
+	height: 100%;
+	margin: 0;
+}
+
+.custom-cursor {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: rgba(230, 14, 118, 0.85);
+	pointer-events: none;
+	transform: translate(-50%, -50%) scale(1);
+	transition: transform 140ms ease, width 140ms ease, height 140ms ease, background 140ms ease, opacity 200ms ease;
+	z-index: 9999;
+	mix-blend-mode: normal;
+}
+
+.custom-cursor.hidden {
+	opacity: 0;
+}
+
+.custom-cursor.cursor-hover {
+	transform: translate(-50%, -50%) scale(1.6);
+	background: rgba(230, 14, 118, 0.85);
+}
+
+.custom-cursor.cursor-click {
+	transform: translate(-50%, -50%) scale(0.8);
+	background: rgba(230, 14, 118, 0.85);
+}
+
+/* Optional: make cursor larger on interactive elements */
+a:hover, button:hover, input[type="button"]:hover, input[type="submit"]:hover {
+	cursor: none;
+}
+
+/* Background hero section */
+.hero {
+	background-image: url("../Img/background.svg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	position: relative;
+}
+
+.hero::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(0,0,0,0.35);
+	pointer-events: none;
+}
+
+.hero > .hero-content {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	padding: 2rem;
+}
+
+/* Page background: handled by the `.bg-full` image element to avoid cropping */
+body {
+	background: none;
+	background-color: #ffffff; /* ensure no grey shows through */
+}
+
+/* Tablet: adjust background for typical tablet widths */
+@media (min-width: 600px) and (max-width: 1024px) {
+	body {
+		background-position: center top;
+		background-size: cover;
+	}
+}
+
+/* Mobile: prefer top-focused positioning */
+@media (max-width: 599px) {
+	body {
+		background-position: center top;
+		background-size: cover;
+	}
+}
+
+/* Desktop: show full image without cropping */
+@media (min-width: 1025px) {
+	body {
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-color: whitesmoke;
+		background-attachment: fixed;
+	}
+}
+
+/* Full background image element (all viewports): show entire image without cropping */
+.bg-full {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	object-fit: contain;
+	object-position: center center;
+	z-index: -1;
+	pointer-events: none;
+	background-color: transparent;
+}
+
+/* Top navigation bar */
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 12px 24px;
+	box-sizing: border-box;
+	background: rgba(255,255,255,0.30); /* 30% transparency */
+	backdrop-filter: blur(6px);
+	font-family: 'Montserrat', sans-serif;
+	z-index: 1000;
+}
+
+.navbar ul {
+	display: flex;
+	gap: 18px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.navbar a {
+	color: #111;
+	text-decoration: none;
+	padding: 8px 14px;
+	border-radius: 6px;
+	font-weight: 600;
+	transition: background-color 160ms ease, color 160ms ease, transform 120ms ease;
+}
+
+.navbar a:hover {
+	background-color: transparent; /* remove grey rectangle */
+	color: #0f021c; /* highlight color */
+	text-decoration: underline;
+	transform: translateY(-2px);
+}
+
+/* Slightly reduce nav padding on small screens */
+@media (max-width: 480px) {
+	.navbar { padding: 8px 12px; }
+	.navbar a { padding: 6px 10px; }
+}
+
+body {
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+position: fixed;
+top: 0;
+right: 0;
+width: 100%;
+padding: 20px 40px;
+display: flex;
+justify-content: flex-end;
+background: rgba(75, 66, 66, 0.3); /* 30% transparency */
+backdrop-filter: blur(6px);
+z-index: 1000;
+}
+
+
+/* Navigation links */
+.navbar a {
+margin-left: 30px;
+text-decoration: none;
+color: #020002;
+font-weight: 500;
+font-size: 14px;
+transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar a:hover {
+color: #ac1767;
+text-decoration: none;
+}

@@ -12,7 +12,7 @@ html, body {
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	background: rgba(230, 14, 118, 0.85);
+	background: #D95988;
 	pointer-events: none;
 	transform: translate(-50%, -50%) scale(1);
 	transition: transform 140ms ease, width 140ms ease, height 140ms ease, background 140ms ease, opacity 200ms ease;
@@ -26,12 +26,12 @@ html, body {
 
 .custom-cursor.cursor-hover {
 	transform: translate(-50%, -50%) scale(1.6);
-	background: rgba(230, 14, 118, 0.85);
+	background: #D95988;
 }
 
 .custom-cursor.cursor-click {
 	transform: translate(-50%, -50%) scale(0.8);
-	background: rgba(230, 14, 118, 0.85);
+	background: #D95988;
 }
 
 /* Optional: make cursor larger on interactive elements */
@@ -141,7 +141,7 @@ body {
 	display: fixed;
 	align-items: center;
 	padding: 8px 14px !important;
-	color: #e6398f !important;
+	color: #D95988 !important;
 	font-weight: 700 !important;
 	text-decoration: none !important;
 	transform: none !important;
@@ -150,7 +150,7 @@ body {
 
 .nav-dropdown-toggle:hover {
 	background-color: transparent !important;
-	color: #e6398f !important;
+	color: #D95988 !important;
 	text-decoration: none !important;
 	transform: none !important;
 }
@@ -162,7 +162,7 @@ body {
 	background: rgba(255, 255, 255, 0.95);
 	backdrop-filter: blur(6px);
 	border-radius: 8px;
-	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+	box-shadow: 0 8px 24px #282C40;
 	padding: 0.8rem 0;
 	min-width: 160px;
 	opacity: 0;
@@ -182,7 +182,7 @@ body {
 .dropdown-item {
 	display: block;
 	padding: 0.8rem 1.2rem;
-	color: #111;
+	color: #282C40;
 	text-decoration: none;
 	font-weight: 500;
 	font-size: 0.9rem;
@@ -192,12 +192,12 @@ body {
 
 .dropdown-item:hover {
 	background-color: #f5f5f5;
-	color: #e6398f;
+	color: #D95988;
 	transform: translateX(4px);
 }
 
 .navbar a {
-	color: #111;
+	color: #282C40;
 	text-decoration: none;
 	padding: 8px 14px;
 	border-radius: 6px;
@@ -207,20 +207,15 @@ body {
 
 .navbar a:hover {
 	background-color: transparent; /* remove grey rectangle */
-	color: #0f021c; /* highlight color */
+	color: #282C40; /* highlight color */
 	text-decoration: underline;
 	transform: translateY(-2px);
 }
 
-/* About page background */
-.about-page {
-	background-color: #ffd1e6; /* soft pink */
-	min-height: 100vh;
-}
 
 /* Active nav link styling */
 .navbar a.active {
-	color: #e6398f;
+	color: #D95988;
 	font-weight: 700;
 	text-decoration: none;
 }
@@ -265,7 +260,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar a {
 	margin-left: 0;
 	text-decoration: none;
-	color: #020002;
+	color: #282C40;
 	font-weight: 500;
 	font-size: 14px;
 	transition: color 0.3s ease;
@@ -273,7 +268,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hover effect */
 .navbar a:hover {
-color: #ac1767;
+color: #D95988;
 text-decoration: none;
 }
 
@@ -325,7 +320,7 @@ text-decoration: none;
 }
 
 .highlight {
-  color: hotpink;
+  color: #D95988;
   font-weight: bold;
 }
 .justify {
@@ -522,7 +517,7 @@ body {
 
 .contact-links a {
   text-decoration: none;
-  color: #111;
+  color: #282C40;
   font-size: 1rem;
   display: flex;
   align-items: center;
@@ -535,7 +530,7 @@ body {
 }
 
 .contact-links a:hover {
-  color: #888;
+  color: #D95988;
   transform: translateX(4px);
 }
 /* Project Page Styling */
@@ -556,13 +551,13 @@ body {
   font-family: 'Fort Extrabold', sans-serif;
   font-size: 3rem;
   margin: 0;
-  color: #111;
+  color: #282C40;
 }
 
 .project-year {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.95rem;
-  color: #666;
+  color: #D95988;
   margin: 0.5rem 0 0 0;
   letter-spacing: 0.05em;
 }
@@ -585,7 +580,7 @@ body {
   font-family: 'Fort Extrabold', sans-serif;
   font-size: 1.1rem;
   margin: 0 0 0.5rem 0;
-  color: #111;
+  color: #282C40;
 }
 
 .project-sidebar p,
@@ -636,7 +631,7 @@ body {
   height: auto;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 24px #282C40;
 }
 
 .nav-arrow {
@@ -659,7 +654,7 @@ body {
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
   z-index: 10;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 8px #282C40;
 }
 
 .nav-arrow:hover {
@@ -719,7 +714,7 @@ body {
   align-items: center;
   gap: 0.8rem;
   padding: 1.2rem 2.5rem;
-  background: #111;
+  background: #282C40;
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
@@ -732,7 +727,7 @@ body {
 
 .prev-project-btn:hover,
 .next-project-btn:hover {
-  background: #e6398f;
+  background: #D95988;
   transform: translateX(8px);
 }
 
@@ -849,7 +844,7 @@ body {
   align-items: center;
   gap: -0.3rem;
   background: transparent;
-  color: #111;
+  color: #282C40;
   text-decoration: none;
   border-radius: 0;
   font-family: 'Fort Extrabold', sans-serif;
@@ -865,7 +860,7 @@ body {
   background: transparent;
   transform: translateY(4px);
   box-shadow: none;
-  color: #e6398f;
+  color: #D95988;
 }
 
 

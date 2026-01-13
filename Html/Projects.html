@@ -3,12 +3,67 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Projects</title>
+	<title>Contact</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/epi8xtv.css">
 	<link rel="stylesheet" href="../Css/Styles.css">
 </head>
 <body>
+	<nav class="navbar">
+		<a href="Home.html">
+            <img src="../Img/Logo.png" alt="Logo" class="logo">
+        </a>
+		<ul>
+			<li><a href="AboutMe.html">About Me</a></li>
+			<li class="nav-dropdown">
+				<a href="Projects.html" class="active nav-dropdown-toggle">Projects</a>
+				<div class="nav-dropdown-menu">
+					<a href="Projects/Alana.html" class="dropdown-item">Alana</a>
+  			<a href="Projects/Muuver.html" class="dropdown-item">Muuver</a>
+					<a href="Projects/Zazil.html" class="dropdown-item">Zazil</a>
+				</div>
+			</li>
+			<li><a href="Contact.html" >Contact</a></li>
+		</ul>
+	</nav>
 
-	<script src="../Js/Interactions.Js"></script>
+	<main class="content">
+		<!-- Projects page content -->
+		<section class="projects-grid">
+
+  			<a href="Projects/Alana.html" class="project-item">
+    			<img src="../Img/Alana1.JPG" alt="Project 1">
+    			<div class="overlay">
+      			<h4>Alana</h4>
+      			<span>2025</span>
+    			</div>
+  			</a>
+
+  			<a href="Projects/Muuver.html" class="project-item">
+    			<img src="../Img/Muuver1.JPG" alt="Project 2">
+    			<div class="overlay">
+      			<h4>Muuver</h4>
+      			<span>2025</span>
+    			</div>
+  			</a>
+
+  			<a href="Projects/Zazil.html" class="project-item">
+    			<img src="../Img/Zazil1.png" alt="Project 3">
+    			<div class="overlay">
+      			<h4>Zazil</h4>
+      			<span>2025</span>
+    			</div>
+  			</a>
+
+		</section>
+
+	</main>
+
+	<script src="../Js/Interactions.js"></script>
+	<footer class="footer">
+        <p>© Carranza Design. 2026</p>
+    </footer>
 </body>
 </html>
-
